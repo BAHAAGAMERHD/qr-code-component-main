@@ -1,0 +1,81 @@
+/* simple CSS-reset */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*website rules*/
+
+:root {
+    --Ligh-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Outfit", sans-serif;
+    background-color: var(--Ligh-gray);
+}
+
+.main-container {
+
+    width: 320px;
+    background-color: white;
+    padding: 16px;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    box-shadow: 0px 20px 25px 0px rgba(0,0, 0, 0.4);
+
+}
+
+.main-container img {
+    border-radius: 10px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    
+}
+
+.text-container h2 {
+    font-size: 22px;
+    color: var(--Dark-blue);
+    font-weight: 700;
+}
+
+.text-container p {
+    color: var(--Grayish-blue);
+    font-size: 17px;
+    font-weight: 400;
+}
