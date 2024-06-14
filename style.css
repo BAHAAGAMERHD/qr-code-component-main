@@ -31,15 +31,18 @@ ul {
 }
 
 html,
-body {
+body,
+main {
     height: 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     font-family: "Outfit", sans-serif;
     background-color: var(--Ligh-gray);
+}
+main{
+    display: flex;
+    flex-direction: column;
 }
 
 .main-container {
@@ -63,7 +66,7 @@ body {
     flex-direction: column;
     gap: 16px;
     text-align: center;
-    
+
 }
 
 .text-container h2 {
